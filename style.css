@@ -1,0 +1,462 @@
+
+:root {
+   
+    --ff-primary: 'Arial', sans-serif;
+    --ff-secondary: 'Arial', monospace;
+    
+    --fw-reg: 300;
+    --fw-bold: 900;
+    
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+    
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+.about-me {
+  border: 40px;
+  font-size: 25px;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.header {
+  
+  overflow: hidden;
+  background-color: var(--clr-dark);
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid var(--clr-accent);
+  
+
+}
+
+.header a {
+  float: left;
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  border-radius: 40px;
+  font-family: Arial, sans-serif;
+  margin: 0 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding-bottom: 20px;
+ 
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header h1 {
+  padding-left: 20px;
+}
+
+
+section {
+    padding: 5em 2em;
+}
+
+.imageGallery {
+  width: 450px;
+  height: 450px;
+  margin: auto;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: var(--clr-accent);
+  color: black;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+.services {
+    margin-bottom: 4em;
+    font-family: Arial, sans-serif;
+}
+
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+.slideshow {
+  
+  width: 700px;
+  margin: 50px auto auto auto;
+  position: relative;
+  
+
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.mySlides {
+  display: none;
+  
+}
+
+.imgslides {
+  width: 700px;
+  height: 600px;
+  border-radius: 20px;
+  object-fit: cover;
+
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+ color: var(--clr-accent);
+ background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  border-radius: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.education {
+  margin: auto;
+  font-size: 25px;
+  color: var(--clr-accent);
+  text-align: center;
+
+}
+
+/*----------------------------------------*/
+
+.my-services {
+    background-color: var(--clr-dark);
+    
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.experience {
+  margin-top: 50px;
+
+  background-color: var(--clr-dark);
+  background-size: cover;
+  padding-bottom: 10px;
+
+}
+
+.Edu-container {
+  
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.Edu-container h3,h4,p {
+  text-align: center;
+}
+
+
+.edu-logo {
+  margin: auto;
+  width: auto;
+  height: 90px;
+  display: block;
+}
+
+.edu-left {
+ background-color: var(--clr-light);
+ flex-basis: 600px;
+ height: 350px;
+ margin: 30px;
+ border-radius: 30px;
+
+}
+
+.edu-right {
+ background-color: var(--clr-light);
+ flex-basis: 600px;
+ height: 350px;
+ margin: 30px;
+ float: right;
+ border-radius: 30px;
+}
+
+.work-exp {
+ height: auto;
+ width: 800px;
+ margin: 50px auto;
+ background-color: var(--clr-dark);
+ border-radius: 30px;
+ padding: 20px;
+}
+
+
+
+.reception {
+  margin-top: 5px;
+  display: none;
+  border-radius: 10px;
+  background-color: var(--clr-light);
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+
+}
+
+.reception p {
+  text-align: left;
+}
+
+.dropdown {
+  width: 100%;
+  height: 60px;
+  background-color: var(--clr-accent);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 22px;
+  padding-right: 25px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  
+}
+
+
+
+.dropdown span {
+  width: 20px;
+  height: 20px;
+  border-left: 4px solid;
+  border-top: 4px solid;
+  float: right;
+  transform: rotate(-135deg);
+}
+
+
+.dropdown:hover {
+
+  background-color: #707070
+}
+
+.Projects {
+  padding-top: 30px;
+}
+
+.projectContainer {
+  display: flex;
+  width: 1100px;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.project {
+  width: 400px;
+  height: 300px;
+ 
+}
+
+
+.project img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border: 4px solid;
+  border-radius: 40px;
+  border-color: #707070;
+
+}
+
+.project img:hover {
+  border-color: var(--clr-accent);
+}
+
+.projectDescription {
+  display: flex;
+  width: 1100px;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.Details {
+
+  width: 400px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto;
+  border-radius: 40px;
+  background-color: var(--clr-dark)
+
+}
+
+.Details p {
+  color: white;
+}
+
+.Contact {
+  background-color: var(--clr-dark);
+  padding-top: 40px;
+}
+
+.Contact h3 {
+  margin-top: 40px;
+  color: white;
+  text-align: center;
+
+}
+
+.Socials {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: var(--clr-accent);
+}
+
+.fa-linkedin {
+
+  color: white;
+}
+
+.fa-github {
+  color: white;
+ 
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.section__title--services {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 17px;
+    }
+    
+    .service + .service {
+        margin-left: 2em;
+    }
+}
+
